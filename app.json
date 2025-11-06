@@ -5,16 +5,29 @@
     "version": "1.0.0",
     "sdkVersion": "54.0.0",
     "orientation": "portrait",
-    "platforms": ["android", "ios", "web"],
+    "platforms": [
+      "android",
+      "ios",
+      "web"
+    ],
     "android": {
       "package": "com.yourcompany.pulseapp",
-      "permissions": ["CAMERA", "FLASHLIGHT", "VIBRATE"],
+      "permissions": [
+        "CAMERA",
+        "FLASHLIGHT",
+        "VIBRATE"
+      ],
       "versionCode": 1
     },
     "ios": {
       "supportsTablet": true,
       "infoPlist": {
         "NSCameraUsageDescription": "PulseApp needs camera access to measure heart rate using your fingertip."
+      }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "59bb85d6-9c1a-4074-a539-72d7dda3b687"
       }
     }
   }

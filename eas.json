@@ -3,6 +3,13 @@
     "production": {
       "android": { "buildType": "apk" },
       "distribution": "internal"
+    },
+    "development": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "developmentClient": true
     }
   }
 }
