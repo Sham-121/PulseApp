@@ -23,21 +23,22 @@ const HomeScreen = ({ navigation }) => {
       </Button>
 
 
-      <Button
-        style={styles.button}
-        mode="contained"
-        onPress={() => alert("Coming soon")}
-      >
-        Bar Code Scanner
+      <Button 
+      style={styles.button} 
+      mode="contained" 
+      onPress={() => navigation.navigate("BarcodeScannerNative")}>
+        Barcode Scanner
       </Button>
 
+
       <Button
-        style={styles.button}
-        mode="contained"
-        onPress={() => alert("Coming soon")}
-      >
-        Food Scanner
-      </Button>
+      style={styles.button}
+      mode="contained"
+      onPress={() => navigation.navigate("FoodScanner")}
+    >
+      Food Scanner
+    </Button>
+
 
       <Button
         style={styles.button}
