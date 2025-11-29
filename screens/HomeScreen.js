@@ -2,6 +2,8 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
 import { Button } from "react-native-paper";
+import { Alert } from "react-native";
+import { getTestBpm } from "./src/native/PulseModule"; // adjust path if needed
 
 const HomeScreen = ({ navigation }) => {
   return (
@@ -47,6 +49,23 @@ const HomeScreen = ({ navigation }) => {
       >
         Mental Health
       </Button>
+
+      <Button
+        style={styles.button}
+        mode="contained"
+        onPress={async () => {
+          try {
+            const value = await getTestBpm();
+            Alert.alert("Native Module Works ✅", `Test BPM = ${value}`);
+          } catch (e) {
+            console.error("Native test failed:", e);
+            Alert.alert("Native Module Error ❌", e.message || String(e));
+          }
+        }}
+      >
+        Test Native Module
+</Button>
+
     </View>
   );
 };
