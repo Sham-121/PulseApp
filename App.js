@@ -10,8 +10,10 @@ import InstructionsScreen from "./screens/InstructionsScreen";
 import AyurvedaBotScreen from "./screens/AyurvedaBotScreen";
 import BarcodeScannerNative from "./screens/BarcodeScannerNative";
 import FoodScanner from "./screens/FoodScannerScreen"; // ensure filename matches
+import PulseScanScreen from "./screens/PulseScanScreen";
 
-// --------------------
+
+
 // Customize your light theme here
 // Use the colors you prefer (these match the purple accent you used while testing)
 const APP_PRIMARY = "#684bf7ff"; // purple primary for buttons
@@ -69,6 +71,7 @@ export default function App() {
           <Stack.Screen name="AyurvedaBot" component={AyurvedaBotScreen} />
           <Stack.Screen name="BarcodeScannerNative" component={BarcodeScannerNative} options={{ title: "Barcode Scanner" }} />
           <Stack.Screen name="FoodScanner" component={FoodScanner} options={{ title: "Food Scanner" }} />
+          <Stack.Screen name="PulseScan" component={PulseScanScreen} options={{ title: "Pulse Scan" }}/>
         </Stack.Navigator>
       </NavigationContainer>
     </PaperProvider>
