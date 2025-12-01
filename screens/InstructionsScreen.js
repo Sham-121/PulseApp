@@ -11,7 +11,7 @@ export default function InstructionsScreen({ navigation }) {
       <Text style={styles.instruction}>3. The flash will turn on automatically.</Text>
       <Text style={styles.instruction}>4. Stay still until the measurement is done.</Text>
 
-      <TouchableOpacity style={styles.button} onPress={() => alert("Coming soon")}>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate("PulseScan")}>
         <Text style={styles.buttonText}>Continue</Text>
       </TouchableOpacity>
     </View>

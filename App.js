@@ -59,7 +59,7 @@ export default function App() {
   return (
     <PaperProvider theme={paperTheme}>
       <NavigationContainer theme={navTheme}>
-        {/* Status bar: dark-content for light background */}
+        
         <StatusBar barStyle="dark-content" backgroundColor={APP_BACKGROUND} />
         <Stack.Navigator initialRouteName="Home" screenOptions={{
           headerStyle: { backgroundColor: APP_SURFACE },
