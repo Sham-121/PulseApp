@@ -14,6 +14,9 @@
         "projectId": "f93b53f4-1104-480a-9978-ce1c0daa31b8"
       }
     },
-    "owner": "shantanu_thakur"
+    "owner": "shantanu_thakur",
+    "android": {
+      "package": "com.shantanu_thakur.PulseApp"
+    }
   }
 }
